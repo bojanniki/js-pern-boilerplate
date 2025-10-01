@@ -1,0 +1,13 @@
+# Dependency folders
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Sensitive environment files
+.env
+server/.env
+client/.env
+
+# Build outputs
+client/dist
+server/dist

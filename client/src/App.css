@@ -1,0 +1,47 @@
+/* client/src/App.css */
+
+/* General App Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+/* Status Box Styles (CRUCIAL for testing the connection) */
+.status-box {
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 8px;
+  font-weight: bold;
+  max-width: 600px;
+  font-size: 1.1em;
+  text-align: left;
+  border-left: 8px solid; /* For a visible status indicator */
+}
+
+/* SUCCESS (API and DB Connected) */
+.success {
+  background-color: #d4edda; /* Light Green */
+  color: #155724; /* Dark Green Text */
+  border-color: #28a745; /* Solid Green Border */
+}
+
+/* ERROR (Connection Failed) */
+.error {
+  background-color: #f8d7da; /* Light Red */
+  color: #721c24; /* Dark Red Text */
+  border-color: #dc3545; /* Solid Red Border */
+}
+
+/* Simple style for instructional text */
+.docs-info {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #666;
+}
