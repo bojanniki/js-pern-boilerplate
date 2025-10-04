@@ -1,7 +1,13 @@
-//Database connection
-const Pool = require("pg").Pool;
+// server/db.js
 require("dotenv").config();
+const Pool = require("pg").Pool;
 
-const pool = new Pool();
+const pool = new Pool({
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  host: process.env.PGHOST,
+  port: process.env.PGPORT,
+  database: process.env.PGDATABASE,
+});
 
-//export the pool so other files can use it to run SQL queries
+module.exports = pool;
